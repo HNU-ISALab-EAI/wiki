@@ -6,5 +6,5 @@
   ),
   name: "ISALab Wiki",
   description: "实验室服务与工具使用指南",
-  repository: "https://github.com/HNU-ISALab-EAI/ISALab-Wiki",
+  repository: "https://github.com/HNU-ISALab-EAI/wiki",
 )
