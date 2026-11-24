@@ -1,6 +1,8 @@
-# ISALab Wiki 示例
+# ISALab Wiki
 
-本项目直接使用 Typst Universe 的 [Manifesto HTML 文档模板](https://typst.app/universe/package/manifesto/)。所有正文都是 `.typ` 文件；首页和每个章节分别编译为独立 HTML 页面。示例地址、命令、路径和服务规则都是占位内容。
+在线 Wiki：[https://hnu-isalab-eai.github.io/ISALab-Wiki/](https://hnu-isalab-eai.github.io/ISALab-Wiki/)
+
+源码仓库：[HNU-ISALab-EAI/ISALab-Wiki](https://github.com/HNU-ISALab-EAI/ISALab-Wiki)。本项目使用 Typst Universe 的 [Manifesto HTML 文档模板](https://typst.app/universe/package/manifesto/)；首页和每个章节分别编译为独立 HTML 页面。文章中的账号、主机名、命令、路径和服务规则仍是待实验室确认的示例内容。
 
 ## 目录结构
 
@@ -26,6 +28,8 @@ uv run python build.py
 ```
 
 Typst 编译器由项目的 `typst` Python 依赖提供，不依赖系统里的 Typst 命令。首页写入 `dist/index.html`，各章节分别生成 `dist/getting-started.html` 等页面；构建也不需要 npm 或 Node.js。
+
+推送到 `main` 后，GitHub Actions 会自动构建并发布到 [GitHub Pages](https://hnu-isalab-eai.github.io/ISALab-Wiki/)。
 
 ## 编辑
 
